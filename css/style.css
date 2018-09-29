@@ -310,6 +310,8 @@ footer p {
 
 .more {
     display: none;
-    
-    
+}
+
+.back {
+    margin: 10px;
 }

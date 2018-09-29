@@ -3,10 +3,10 @@
 
 
 document.addEventListener ('DOMContentLoaded', function (){
-    console.log('Beata');
+   
 
     var menuButton = document.querySelector('.for-dropdown');
-    console.log(menuButton);
+   
     var subMenu = document.querySelector('.dropdown');
     
     menuButton.addEventListener('mouseover', function() {    
@@ -18,10 +18,9 @@ document.addEventListener ('DOMContentLoaded', function (){
     });
     
     var buttons = document.querySelectorAll('.read-more');
-    console.log(buttons);
+
     
-    console.log(buttons[0].previousElementSibling);
-    
+   
     
     function showHide () {
         var textArea = this.previousElementSibling;   
@@ -47,11 +46,18 @@ document.addEventListener ('DOMContentLoaded', function (){
     
     
     var navBar = document.querySelector('.navbar');
-    console.log(navBar);
+   
     
     window.addEventListener('scroll', function() {
         navBar.style.borderBottom = '3px solid red';
-        console.log('balbalbal');
+    
+    });
+    
+    
+    var backToTopButton = document.getElementById('to-top');
+    
+    backToTopButton.addEventListener('click', function () {
+        window.scroll( 0, 0);
     });
       
 });
