@@ -45,6 +45,14 @@ document.addEventListener ('DOMContentLoaded', function (){
         buttons[i].addEventListener('click', showHide);
     }
     
+    
+    var navBar = document.querySelector('.navbar');
+    console.log(navBar);
+    
+    window.addEventListener('scroll', function() {
+        navBar.style.borderBottom = '3px solid red';
+        console.log('balbalbal');
+    });
       
 });
 
