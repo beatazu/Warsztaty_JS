@@ -191,10 +191,11 @@ nav {
 }
 
 .plan-description p {
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   color: #c8cdd1;
   margin-top: 4rem;
   font-weight: 700;
+    
 }
 
 .list-container {
