@@ -315,3 +315,11 @@ footer p {
 .back {
     margin: 10px;
 }
+
+.org {
+    display: none;
+}
+
+.visible {
+    display: inline-block;
+}

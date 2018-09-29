@@ -59,6 +59,34 @@ document.addEventListener ('DOMContentLoaded', function (){
     backToTopButton.addEventListener('click', function () {
         window.scroll( 0, 0);
     });
+    
+    var sliderItems = document.querySelectorAll('.org');
+    var dotItems = document.querySelectorAll('.dot');
+    var indexClicked;
+    
+    
+    for (var i = 0; i < dotItems.length; i++) {
+        
+        dotItems[i].addEventListener('click', function() {
+            
+            for (var i = 0; i < dotItems.length; i++) {
+                dotItems[i].classList.remove('active');
+                sliderItems[i].classList.remove('visible'); 
+            }
+            
+        this.classList.add('active');
+    
+        for (var i = 0; i < dotItems.length; i++) {
+            if (dotItems[i].classList.contains('active')) {
+            indexClicked = i;
+            break;    
+            } 
+        }
+
+        sliderItems[indexClicked].classList.add('visible');
+        }); 
+        
+    }
       
 });
 
